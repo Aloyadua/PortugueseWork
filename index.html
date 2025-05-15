@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://cdn.discordapp.com/attachments/1331077435139293227/1372702051682746368/download.png?ex=6827bbe8&is=68266a68&hm=43ced759af1261264ceabc1247fb984a9db369125b98a92fc00115b282d3ea73&">
+    <title>Teste de Aprendizado!</title> 
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Mini-Game de Perguntas!</h1>
+        <p>Somente 3 perguntas!</p>
+        <p>Responderão as perguntas com base no que foi aprendido nesta aula!</p>
+        <div id="start-screen">
+            <button class="start-button" onclick="startGame()">Começar Jogo</button>
+        </div>
+
+        <div id="game-container" class="game-container" style="display: none;">
+            <div class="timer">20</div>
+            <div class="score">Acertos: 0</div>
+            <div class="question-container">
+                <div class="question">x</div>
+            </div>
+            
+            <div class="options-grid">
+                <button class="option-button option-1" onclick="checkAnswer(0)">x</button>
+                <button class="option-button option-2" onclick="checkAnswer(1)">x</button>
+                <button class="option-button option-3" onclick="checkAnswer(2)">x</button>
+                <button class="option-button option-4" onclick="checkAnswer(3)">x</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
